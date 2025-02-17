@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Jeremie Diatu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (pour les icônes) -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-key.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1', /* Indigo */
+                        secondary: '#1E293B' /* Bleu Nuit */
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+    <!-- HEADER -->
+    <header class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-16 text-center shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">📜 Mes Certifications</h1>
+            <p class="text-lg md:text-xl">Attestations validant mes compétences techniques</p>
+        </div>
+    </header>
+
+    <!-- SECTION CERTIFICATIONS -->
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center text-3xl md:text-4xl font-bold text-gray-700 dark:text-gray-300 mb-10">
+                🎓 Mes Certifications
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Certification 1 -->
+                <article class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <i class="fas fa-network-wired text-4xl text-indigo-500"></i>
+                    <h3 class="text-xl font-semibold mt-4">CCNA - Cisco Certified Network Associate</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Compétences en réseaux, routage et commutation.</p>
+                    <p class="text-sm text-gray-500 mt-2">🗓️ Juin 2023</p>
+                </article>
+
+                <!-- Certification 2 -->
+                <article class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <i class="fas fa-cogs text-4xl text-green-500"></i>
+                    <h3 class="text-xl font-semibold mt-4">ITIL Foundation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Gestion des services IT selon ITIL.</p>
+                    <p class="text-sm text-gray-500 mt-2">🗓️ Avril 2023</p>
+                </article>
+
+                <!-- Certification 3 -->
+                <article class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <i class="fab fa-microsoft text-4xl text-blue-500"></i>
+                    <h3 class="text-xl font-semibold mt-4">Microsoft Certified: Azure Fundamentals</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Cloud computing avec Azure.</p>
+                    <p class="text-sm text-gray-500 mt-2">🗓️ Février 2023</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center">
+        <p>&copy; 2025 Jeremie Diatu. Tous droits réservés.</p>
+        <a href="Accueil.html" class="text-blue-400 hover:underline">🏠 Retour à l'accueil</a>
+    </footer>
+
+</body>
+</html>

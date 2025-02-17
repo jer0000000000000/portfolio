@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les expériences professionnelles de Jeremie Diatu lors de ses stages chez Wibaie.">
+    <meta name="keywords" content="Stages, Expérience Professionnelle, WSUS, BIND9, DMZ, Informatique, Réseaux, Sécurité">
+    <meta name="author" content="Jeremie Diatu">
+    <title>Stages - Jeremie Diatu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        /* Hero Section améliorée */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(45deg, rgba(124, 58, 237, 0.8), rgba(168, 85, 247, 0.8)), 
+                        url('https://source.unsplash.com/1600x900/?technology,work') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animation au scroll */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Cartes animées */
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="relative text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">🚀 Mes Expériences en Stage</h1>
+            <p class="text-lg md:text-xl">Découvrez mon parcours professionnel et mes réalisations chez Wibaie.</p>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="py-20 container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-300 mb-6">📌 Introduction</h2>
+        <p class="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">
+            Durant mes stages chez Wibaie, j'ai eu l'opportunité de travailler sur **WSUS** et **BIND9 en DMZ**, ce qui m'a permis d'acquérir une solide expérience en gestion de serveurs et en sécurisation des réseaux.
+        </p>
+    </section>
+
+    <!-- SECTION MISSIONS -->
+    <section class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-300 mb-10">🛠️ Missions Réalisées</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Mission 1: WSUS -->
+                <div class="card-hover p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-300">🔄 Mise en place de WSUS</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Configuration et gestion de Windows Server Update Services (WSUS) pour automatiser les mises à jour des machines du réseau.</p>
+                    <a href="https://learn.microsoft.com/fr-fr/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus" target="_blank" class="text-purple-500 hover:underline block mt-4">📖 Lire la doc Microsoft</a>
+                </div>
+
+                <!-- Mission 2: BIND9 en DMZ -->
+                <div class="card-hover p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-gray-300">🌐 Configuration de BIND9 en DMZ</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Mise en place d’un serveur DNS BIND9 dans la DMZ, assurant la résolution des noms de domaine tout en respectant les règles de sécurité réseau.</p>
+                    <a href="https://bind9.net/" target="_blank" class="text-purple-500 hover:underline block mt-4">📖 Documentation BIND9</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CE QUE J'AI APPRIS -->
+    <section class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-300 mb-10">📚 Ce que j’ai appris</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Ces missions m'ont permis de mieux comprendre l'importance de la **gestion des mises à jour en entreprise** et de la **sécurisation des serveurs DNS** dans un environnement réseau exposé (DMZ). J'ai acquis des compétences en :
+            </p>
+            <ul class="text-lg text-gray-800 dark:text-gray-300 mt-6">
+                <li>✅ Administration de Windows Server et WSUS</li>
+                <li>✅ Sécurisation et configuration de BIND9</li>
+                <li>✅ Gestion des mises à jour en entreprise</li>
+                <li>✅ Déploiement sécurisé en environnement DMZ</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Jeremie Diatu. Tous droits réservés.</p>
+            <a href="Accueil.html" class="text-purple-400 hover:underline">🏠 Retour à l'accueil</a>
+        </div>
+    </footer>
+
+    <!-- AOS INIT -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

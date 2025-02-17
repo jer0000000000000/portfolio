@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la formation BTS SIO - Services Informatiques aux Organisations en détail.">
+    <meta name="keywords" content="BTS SIO, Formation Informatique, Systèmes et Réseaux, Développement Web, Débouchés">
+    <meta name="author" content="Jeremie Diatu">
+    <title>Formation BTS SIO - Jeremie Diatu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        /* HERO AVEC VIDÉO */
+        .hero {
+            height: 80vh;
+            position: relative;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(3px);
+        }
+
+        /* CARTES ANIMÉES */
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="https://cdn.pixabay.com/vimeo/703052466/5g-110738.mp4?width=1280&hash=6d71a4039ff1070d" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="relative text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">🚀 Formation BTS SIO</h1>
+            <p class="text-lg md:text-xl">Tout savoir sur la formation, les compétences et les débouchés.</p>
+        </div>
+    </section>
+
+    <!-- PRÉSENTATION DU BTS SIO -->
+    <section class="py-20 container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-300 mb-10">🎓 Présentation du BTS SIO</h2>
+        <p class="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">
+            Le **BTS Services Informatiques aux Organisations (SIO)** est un diplôme Bac+2 qui forme les étudiants à deux grands domaines de l’informatique :
+        </p>
+        <div class="grid md:grid-cols-2 gap-6 mt-10">
+            <div class="card-hover p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">⚡ Option SISR</h3>
+                <p>Administration des réseaux, infrastructures et cybersécurité.</p>
+                <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux" class="text-blue-500 hover:underline block mt-4">📖 En savoir plus</a>
+            </div>
+            <div class="card-hover p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">💻 Option SLAM</h3>
+                <p>Développement de logiciels, applications web et mobiles.</p>
+                <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" class="text-blue-500 hover:underline block mt-4">📖 En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DÉBOUCHÉS PROFESSIONNELS -->
+    <section class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-300 mb-10">🚀 Débouchés et Carrières</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Avec un BTS SIO, vous pouvez accéder à des métiers variés dans l’informatique :
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                <div class="card-hover p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">🖥️ Administrateur Réseau</h3>
+                    <p>Gère les infrastructures réseau et leur sécurité.</p>
+                </div>
+                <div class="card-hover p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">💾 Développeur Logiciel</h3>
+                    <p>Crée des applications pour le web, mobile et desktop.</p>
+                </div>
+                <div class="card-hover p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">🔒 Expert Cybersécurité</h3>
+                    <p>Protège les systèmes informatiques contre les cyberattaques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Jeremie Diatu. Tous droits réservés.</p>
+            <a href="Accueil.html" class="text-blue-400 hover:underline">🏠 Retour à l'accueil</a>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

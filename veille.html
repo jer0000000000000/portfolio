@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veille Technologique sur IPv6 - Découvrez les évolutions, avantages et mises en œuvre d'IPv6.">
+    <meta name="keywords" content="Veille Technologique, IPv6, Réseaux, Internet, Sécurité, Transition IPv6, Protocole Internet">
+    <meta name="author" content="Jeremie Diatu">
+    <title>Veille Technologique - IPv6</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        /* Hero Section améliorée */
+        .hero {
+            height: 80vh;
+            position: relative;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+        }
+
+        /* Cartes animées */
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="https://cdn.pixabay.com/vimeo/538478798/5g-68234.mp4?width=1280&hash=a42b8cb772fd77c1" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="relative text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">🚀 Veille Technologique - IPv6</h1>
+            <p class="text-lg md:text-xl">Découvrez les avancées et l'évolution du protocole IPv6 dans le monde de l'Internet.</p>
+        </div>
+    </section>
+
+    <!-- Présentation de IPv6 -->
+    <section id="presentation" class="py-20 container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-gray-800 dark:text-gray-300">🔍 Qu'est-ce que IPv6 ?</h2>
+        <p class="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">IPv6 est la nouvelle génération du protocole Internet, conçu pour remplacer IPv4 en offrant un espace d'adressage plus large et une meilleure gestion du réseau.</p>
+        <div class="grid md:grid-cols-3 gap-6 mt-10">
+            <div class="card-hover p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">🔐 Avantages</h3>
+                <p>Meilleure sécurité, gestion simplifiée et un espace d'adresses pratiquement illimité.</p>
+            </div>
+            <div class="card-hover p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">🌍 Pourquoi l'adopter ?</h3>
+                <p>IPv4 arrive à saturation, rendant la transition indispensable pour l'avenir des réseaux.</p>
+            </div>
+            <div class="card-hover p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">🏢 Exemples d'utilisation</h3>
+                <p>Grandes entreprises comme Google et Facebook utilisent déjà largement IPv6.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ressources & Liens -->
+    <section class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-300 mb-10">📚 Ressources & Études de Cas</h2>
+            <div class="flex justify-center gap-6">
+                <a href="https://www.ionos.fr/digitalguide/serveur/know-how/quels-sont-les-avantages-de-ipv6/" target="_blank" class="text-blue-500 dark:text-blue-400 text-lg font-semibold hover:underline">Adoption d'IPv6</a>
+                <a href="https://www.google.com/intl/fr/ipv6/statistics.html#tab=ipv6-adoption" target="_blank" class="text-blue-500 dark:text-blue-400 text-lg font-semibold hover:underline">Statistiques IPv6</a>
+                <a href="https://www.cisco.com/c/fr_ca/tech/ip/ip-version-6-ipv6/index.html" target="_blank" class="text-blue-500 dark:text-blue-400 text-lg font-semibold hover:underline">Guide Cisco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Jeremie Diatu. Tous droits réservés.</p>
+            <a href="Accueil.html" class="text-green-400 hover:underline">🏠 Retour à l'accueil</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

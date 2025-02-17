@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Découvrez les compétences et réalisations techniques de Jeremie Diatu, couvrant les systèmes, réseaux et bien plus encore.">
+    <meta name="keywords" content="Compétences, Systèmes, Réseaux, Sécurité, Développement Web">
+    <meta name="author" content="Jeremie Diatu">
+    <title>Compétences Techniques - Jeremie Diatu</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animations au Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#16A34A', /* Vert émeraude */
+                        secondary: '#1E293B', /* Bleu Nuit */
+                        dark: '#0F172A', /* Noir Profond */
+                        grayText: '#9CA3AF'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        /* Effet Parallax pour le Header */
+        .hero {
+            background: linear-gradient(45deg, rgba(34, 193, 195, 0.8), rgba(253, 187, 45, 0.8)), 
+                        url('https://source.unsplash.com/1600x900/?technology,cybersecurity') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animation des cartes */
+        .skill-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="bg-dark text-grayText font-sans leading-relaxed tracking-wide">
+
+    <!-- HEADER -->
+    <header class="hero">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">🚀 Compétences Techniques</h1>
+            <p class="text-lg md:text-xl">Explorez mes connaissances en systèmes, réseaux, sécurité et développement.</p>
+        </div>
+    </header>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section class="py-20 bg-secondary">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-10">🖥️ Partie Systèmes</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="skill-card p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-white">🔐 Sécurité et IDS</h3>
+                    <p class="text-gray-400">Surveillance et détection d'intrusion avec Suricata et Metasploit.</p>
+                </div>
+                <div class="skill-card p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-white">📡 Supervision Réseau</h3>
+                    <p class="text-gray-400">Monitoring avec Nagios, SNMP, et Suricata.</p>
+                </div>
+                <div class="skill-card p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-white">🖥️ Administration Système</h3>
+                    <p class="text-gray-400">Gestion des serveurs Windows/Linux, Active Directory, WSUS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION RÉSEAUX -->
+    <section class="py-20 bg-dark">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-10">🌐 Partie Réseaux</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="skill-card p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-white">🌍 Configuration de VLAN</h3>
+                    <p class="text-gray-400">Mise en place de VLANs, routage OSPF et DHCP avancé.</p>
+                </div>
+                <div class="skill-card p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-white">🛡️ Sécurité Réseau</h3>
+                    <p class="text-gray-400">Pare-feux, VPN, ACLs et configuration sécurisée de BIND9.</p>
+                </div>
+                <div class="skill-card p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-white">📊 Analyse de Trames</h3>
+                    <p class="text-gray-400">Utilisation de Wireshark et TCPDump pour troubleshooting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CERTIFICATIONS -->
+    <section class="py-20 bg-secondary">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-10">🎓 Certifications & Outils</h2>
+            <div class="flex justify-center gap-6">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.citypng.com%2Fsearch%3Fq%3Dlogo%2Bcisco%2Bwithout%2Bbackground&psig=AOvVaw26heirQ7V3SaDvcVpcQWvG&ust=1738874072184000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJi7-uOwrYsDFQAAAAAdAAAAABAE" alt="Cisco" class="w-20">
+                <img src="https://img.icons8.com/color/96/000000/microsoft.png" alt="Microsoft" class="w-20">
+                <img src="https://img.icons8.com/color/96/000000/linux.png" alt="Linux" class="w-20">
+                <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python" class="w-20">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Jeremie Diatu. Tous droits réservés.</p>
+            <a href="Accueil.html" class="text-green-400 hover:underline">🏠 Retour à l'accueil</a>
+        </div>
+    </footer>
+
+    <!-- AOS INIT -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
