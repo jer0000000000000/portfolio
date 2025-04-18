@@ -8,7 +8,6 @@
     <meta name="author" content="Jeremie Diatu">
     <title>Accueil - Jeremie Diatu</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,11 +22,9 @@
         };
     </script>
 
-    <!-- AOS (Animations) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Styles personnalisés -->
     <style>
         .hero {
             background: url('https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif') no-repeat center center/cover;
@@ -89,7 +86,7 @@
     <section class="py-20 bg-white" data-aos="fade-up">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Explorez mon parcours</h2>
-            <div class="grid md:grid-cols-3 gap-10 justify-center max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-10 justify-center max-w-6xl mx-auto">
                 <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
                     <h3 class="text-xl font-semibold mb-2">La Formation BTS SIO</h3>
                     <p class="text-gray-600">Présentation détaillée de ma formation et des compétences acquises.</p>
@@ -105,6 +102,11 @@
                     <p class="text-gray-600">Découvrez mes réalisations en réseau et cybersécurité.</p>
                     <a href="ppe.html" class="text-blue-500 hover:underline">En savoir plus</a>
                 </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+                    <h3 class="text-xl font-semibold mb-2">Stages</h3>
+                    <p class="text-gray-600">Mes expériences professionnelles en entreprise durant ma formation.</p>
+                    <a href="stage.html" class="text-blue-500 hover:underline">En savoir plus</a>
+                </div>
             </div>
         </div>
     </section>
@@ -117,7 +119,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script>
         AOS.init({ duration: 1000, once: true });
     </script>
